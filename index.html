@@ -1,0 +1,93 @@
+<html>
+<head>
+    <title>jQuery ToggleCheckbox Demos</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="http://jqueryui.com/themeroller/themeswitchertool/"></script>
+    <script type="text/javascript" src="https://raw.github.com/junalmeida/jquery-toggleCheckbox/master/src/jquery.togglecheckbox.js"></script>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/themes/base/jquery-ui.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" href="http://static.jquery.com/ui/css/demo-docs-theme/ui.theme.css"
+        type="text/css" media="all" />
+    <link rel="stylesheet" href="styles/jquery.togglecheckbox.css" />
+    <style type="text/css">
+        body
+        {
+            font-family: Verdana, Arial, Helvetica;
+            font-size: 10px;
+            padding: 10px;
+            margin: 0px;
+        }
+        
+        .header
+        {
+            position: relative;
+            float: left;
+            width: 30em;
+        }
+        
+        .content
+        {
+            border-left: solid 1px #B9B9B9;
+            margin-left: 32em;
+            padding-left: 20px;
+            padding-bottom: 300px;
+        }
+        
+        .content ul, .content ul li
+        {
+            display: block;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .content ul li
+        {
+            margin: 3px 0px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#ThemeRoller').themeswitcher({ loadTheme: 'Sunny' });
+
+
+            $("input:checkbox, input:radio").toggleCheckbox();
+        });
+
+
+    </script>
+</head>
+<body>
+    <div class="header">
+        <h1>
+            jQuery ToggleCheckbox Demos</h1>
+        <p>
+            Documentation and changelog: <a href="http://junalmeida.wordpress.com/projetos/jquery-togglecheckbox"
+                target="_blank">Plugin Home Page</a></p>
+        <p>
+            Author: Marcos Almeida Junior</p>
+        <div id="ThemeRoller">
+        </div>
+    </div>
+    <div class="content">
+        <h2>
+            Simple Checkbox</h2>
+        <div>
+            <input type="checkbox" id="chk-input" name="chk-input" /><label for="chk-input">Activated (click at this label)?</label>
+        </div>
+        <h2>
+            Multiple Radios</h2>
+        <div>
+            <ul>
+                <li><input type="radio" id="radio-input1" name="radio-input" checked="checked" /><label for="radio-input1">Option 1</label></li>
+                <li><input type="radio" id="radio-input2" name="radio-input" /><label for="radio-input2">Option 2</label></li>
+                <li><input type="radio" id="radio-input3" name="radio-input" /><label for="radio-input3">Option 3</label></li>
+                <li><input type="radio" id="radio-input4" name="radio-input" /><label for="radio-input4">Option 4</label></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

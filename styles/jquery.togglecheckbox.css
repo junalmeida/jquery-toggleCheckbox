@@ -1,0 +1,40 @@
+.ui-toggleCheckbox, .ui-toggleRadio
+{
+    overflow: hidden;
+    width: 58px;
+    height: 18px;
+    float: left;
+    box-sizing: content-box;
+    
+    cursor: pointer;
+    
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    
+    margin-right: 5px;
+}
+
+.ui-toggleCheckbox a, .ui-toggleRadio a {
+    display: block;
+    background-image: url(images/yes-no.png);
+    background-repeat: no-repeat;
+    background-position: -1px -1px;
+    height: 20px;
+    width: 120px;
+    left: 0px;
+
+    margin-left: 0px;
+}
+
+.ui-toggleCheckbox a.checked, .ui-toggleRadio a.checked {
+    margin-left: -47px;
+}
+
+.ui-toggleCheckbox input, .ui-toggleRadio input {
+	position: absolute;
+	left: -2000px;
+	top: -100px;
+}
